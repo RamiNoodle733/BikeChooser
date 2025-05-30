@@ -1,0 +1,52 @@
+<!-- Google Analytics (replace GA_MEASUREMENT_ID with your actual ID) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'GA_MEASUREMENT_ID');
+
+  // Custom events for conversion tracking  function trackQuizStart() {
+    gtag('event', 'quiz_start', {
+      event_category: 'engagement',
+      event_label: 'BikeChooser_quiz'
+    });
+  }
+  function trackQuizComplete() {
+    gtag('event', 'quiz_complete', {
+      event_category: 'engagement',
+      event_label: 'BikeChooser_quiz'
+    });
+  }
+
+  function trackEmailCapture() {
+    gtag('event', 'email_capture', {
+      event_category: 'conversion',
+      event_label: 'BikeChooser_guide_download'
+    });
+  }
+
+  function trackAffiliateClick(bikeName, bikePrice) {
+    gtag('event', 'affiliate_click', {
+      event_category: 'revenue',
+      event_label: bikeName,
+      value: parseInt(bikePrice.replace(/[^\d]/g, ''))
+    });
+  }
+</script>
+
+<!-- Facebook Pixel (replace PIXEL_ID with your actual ID) -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', 'PIXEL_ID');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=PIXEL_ID&ev=PageView&noscript=1"/></noscript>

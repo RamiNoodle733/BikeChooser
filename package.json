@@ -1,0 +1,36 @@
+{
+  "name": "bikechooser",
+  "version": "1.0.0",
+  "description": "Intelligent bike recommendation platform that helps users find their perfect bike",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server . -p 3000 -o",
+    "dev": "npx live-server --port=3000",
+    "build": "echo 'No build process needed for static site'",
+    "deploy-gh": "git push origin main && echo 'Deployed to GitHub Pages'",
+    "test": "echo 'No tests specified'"
+  },
+  "keywords": [
+    "bike",
+    "bicycle",
+    "recommendation",
+    "quiz",
+    "cycling",
+    "bike-finder",
+    "affiliate",
+    "e-commerce"
+  ],
+  "author": "Ramir",
+  "license": "MIT",  "repository": {
+    "type": "git",
+    "url": "https://github.com/RamiNoodle733/BikeChooser.git"
+  },
+  "homepage": "https://RamiNoodle733.github.io/BikeChooser",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

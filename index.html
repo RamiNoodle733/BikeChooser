@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>BikeChooser - Find Your Perfect Bike</title>
+    <meta name="description" content="Discover the perfect bike for your needs with our intelligent bike recommendation tool. Get personalized suggestions based on your riding style, budget, and preferences.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-bicycle"></i>
+                <span>BikeChooser</span>
+            </div>
+            <nav class="nav">
+                <a href="#how-it-works">How It Works</a>
+                <a href="#quiz">Find My Bike</a>
+                <a href="#guides">Guides</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Find Your Perfect Bike in <span class="highlight">60 Seconds</span></h1>
+                <p>Stop feeling overwhelmed by endless bike options. Our smart recommendation tool analyzes your needs and suggests the perfect bike for your lifestyle and budget.</p>
+                <button class="cta-button" onclick="startQuiz()">
+                    <i class="fas fa-play"></i>
+                    Start Bike Quiz
+                </button>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">10,000+</span>
+                        <span class="stat-label">Happy Riders</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Bike Models</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Satisfaction Rate</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Modern bikes collection">
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-it-works">        <div class="container">
+            <h2>How BikeChooser Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-clipboard-question"></i>
+                    </div>
+                    <h3>Answer Simple Questions</h3>
+                    <p>Tell us about your riding style, budget, and preferences in our quick 2-minute quiz.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI-Powered Analysis</h3>
+                    <p>Our algorithm analyzes your responses against our database of 500+ bike models.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Get Perfect Matches</h3>
+                    <p>Receive personalized recommendations with detailed explanations and where to buy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz" class="quiz-section">
+        <div class="container">
+            <div class="quiz-container" id="quiz-container" style="display: none;">
+                <div class="quiz-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                    <span class="progress-text" id="progress-text">Question 1 of 6</span>
+                </div>
+
+                <div class="quiz-content" id="quiz-content">
+                    <!-- Quiz questions will be dynamically loaded here -->
+                </div>
+            </div>
+
+            <div class="results-container" id="results-container" style="display: none;">
+                <h2>Your Perfect Bike Matches</h2>
+                <div id="bike-recommendations"></div>
+                
+                <div class="email-capture">
+                    <h3>Get Your Free Bike Buying Guide</h3>
+                    <p>Enter your email to receive our comprehensive guide with maintenance tips, sizing charts, and exclusive deals.</p>
+                    <form class="email-form" id="email-form">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit">Get Free Guide</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Bikes -->
+    <section class="popular-bikes">
+        <div class="container">
+            <h2>Popular Bike Categories</h2>
+            <div class="bike-categories">
+                <div class="category">
+                    <img src="https://images.unsplash.com/photo-1544191696-15693df4c96b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Road Bike">
+                    <h3>Road Bikes</h3>
+                    <p>Built for speed and efficiency on paved roads</p>
+                    <span class="price-range">$400 - $3,000+</span>
+                </div>
+                <div class="category">
+                    <img src="https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Mountain Bike">
+                    <h3>Mountain Bikes</h3>
+                    <p>Designed for off-road trails and rugged terrain</p>
+                    <span class="price-range">$300 - $5,000+</span>
+                </div>
+                <div class="category">
+                    <img src="https://images.unsplash.com/photo-1571068316344-75bc76f77890?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Hybrid Bike">
+                    <h3>Hybrid Bikes</h3>
+                    <p>Perfect blend of comfort and versatility</p>
+                    <span class="price-range">$250 - $1,500</span>
+                </div>
+                <div class="category">
+                    <img src="https://images.unsplash.com/photo-1571068316344-75bc76f77890?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Electric Bike">
+                    <h3>Electric Bikes</h3>
+                    <p>Powered assistance for effortless riding</p>
+                    <span class="price-range">$800 - $4,000+</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Users Say</h2>
+            <div class="testimonial-grid">                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p>"BikeChooser helped me find the perfect commuter bike! The recommendations were spot-on and saved me hours of research."</p>
+                    <div class="author">- Sarah M., Urban Commuter</div>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p>"As a beginner, I was completely lost. This tool made bike shopping simple and actually fun!"</p>
+                    <div class="author">- Mike D., Weekend Rider</div>
+                </div>                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p>"Found my dream mountain bike through BikeChooser. The detailed explanations really helped me understand what I needed."</p>
+                    <div class="author">- Jessica L., Trail Enthusiast</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">                <div class="logo">
+                    <i class="fas fa-bicycle"></i>
+                    <span>BikeChooser</span>
+                </div>
+                <p>Helping riders find their perfect bike since 2025.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#quiz">Bike Quiz</a></li>
+                        <li><a href="#guides">Buying Guides</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Bike Size Guide</a></li>
+                        <li><a href="#">Maintenance Tips</a></li>
+                        <li><a href="#">Safety Guide</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>            <div class="footer-bottom">
+                <p>&copy; 2025 BikeChooser. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
