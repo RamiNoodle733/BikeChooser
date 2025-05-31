@@ -1,3 +1,6 @@
+# Google Search Console verification (must be public)
+!google*.html
+
 # Node.js dependencies
 node_modules/
 npm-debug.log*
