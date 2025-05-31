@@ -1,0 +1,85 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables and secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows specific
+desktop.ini
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Temporary folders
+tmp/
+temp/
+
+# Marketing and business documents (keep private)
+MARKETING_*.md
+MONETIZATION_*.md
+AFFILIATE_*.md
+SEO_*.md
+LAUNCH_*.md
+PROJECT_COMPLETE.md
+*_STRATEGY.md
+*_GUIDE.md
+*_CHECKLIST.md
+*_PLAN.md
+
+# Deployment and development scripts
+deploy*.ps1
+deploy*.sh
+test*.html
+localruninfo.txt
+
+# Analytics and tracking (keep private)
+analytics.html
+
+# Backup files
+*.bak
+*.backup
+*.orig
+
+# Build artifacts
+dist/
+build/
+
+# Cache directories
+.cache/
+.parcel-cache/
+
+# Local development files
+*.local

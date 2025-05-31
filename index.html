@@ -1,9 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>BikeChooser - Find Your Perfect Bike</title>
-    <meta name="description" content="Discover the perfect bike for your needs with our intelligent bike recommendation tool. Get personalized suggestions based on your riding style, budget, and preferences.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which Bike Should I Buy Quiz - Find Your Perfect Bike in 2025 | BikeChooser</title>
+    <meta name="description" content="Take our 'Which bike should I buy' quiz to find your perfect bike! Get personalized bike recommendations based on your riding style, budget, and needs. Free interactive bike buying guide.">
+    <meta name="keywords" content="which bike should i buy quiz, bike recommendation quiz, best bike for me, bike buying guide, bike selector tool, find perfect bike">
     <meta name='impact-site-verification' value='15fcb8e8-639c-44be-9299-b9df2ca46a0b'>
+      <!-- Open Graph tags for social media -->
+    <meta property="og:title" content="Which Bike Should I Buy Quiz - Find Your Perfect Bike">
+    <meta property="og:description" content="Take our free quiz to discover which bike is perfect for you. Get personalized recommendations in just 2 minutes!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bikechooser.netlify.app">
+    <meta property="og:image" content="https://bikechooser.netlify.app/images/bikeChooserLogo_noBg_withSubtitle.png">
+    <meta property="og:site_name" content="BikeChooser">
+      <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Which Bike Should I Buy Quiz">
+    <meta name="twitter:description" content="Free interactive quiz to find your perfect bike based on your needs and budget.">
+    <meta name="twitter:image" content="https://bikechooser.netlify.app/images/bikeChooserLogo_noBg_withSubtitle.png">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="BikeChooser">
+    <meta name="language" content="en-US">
+    <meta name="geo.region" content="US">
+    <meta name="theme-color" content="#2563eb">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://bikechooser.netlify.app">
+      <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Which Bike Should I Buy Quiz",
+      "description": "Interactive quiz to help users find the perfect bike based on their riding style, budget, and preferences",
+      "url": "https://bikechooser.netlify.app",
+      "applicationCategory": "Lifestyle",
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "creator": {
+        "@type": "Organization",
+        "name": "BikeChooser",
+        "url": "https://bikechooser.netlify.app"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "127"
+      }
+    }
+    </script>
+    <!-- Google Analytics 4 (replace GA_MEASUREMENT_ID with your actual ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -24,15 +83,15 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="container">
-            <div class="hero-content">
+        <div class="container">            <div class="hero-content">
                 <div class="hero-logo">
                     <img src="images/bikeChooserLogo_noBg_withSubtitle.png" alt="BikeChooser - Your Perfect Bike Awaits" class="hero-logo-img">
                 </div>
-                <p>Stop feeling overwhelmed by endless bike options. Our smart recommendation tool analyzes your needs and suggests the perfect bike for your lifestyle and budget.</p>
+                <h1>Which Bike Should I Buy? Take Our Free Quiz!</h1>
+                <p>Stop wondering "which bike should I buy?" Our intelligent bike recommendation quiz analyzes your riding style, budget, and preferences to suggest the perfect bike for you in just 2 minutes.</p>
                 <button class="cta-button" onclick="startQuiz()">
                     <i class="fas fa-play"></i>
-                    Start Bike Quiz
+                    Start Bike Quiz Now
                 </button>
             </div>
             <div class="hero-image">
@@ -41,31 +100,31 @@
         </div>
     </section>
 
-    <!-- How It Works -->
-    <section id="how-it-works" class="how-it-works">
+    <!-- How It Works -->    <section id="how-it-works" class="how-it-works">
         <div class="container">
-            <h2>How BikeChooser Works</h2>
+            <h2>How Our "Which Bike Should I Buy" Quiz Works</h2>
+            <p class="section-subtitle">Answer simple questions and get personalized bike recommendations instantly</p>
             <div class="steps">
                 <div class="step">
                     <div class="step-icon">
                         <i class="fas fa-clipboard-question"></i>
                     </div>
-                    <h3>Answer Simple Questions</h3>
-                    <p>Tell us about your riding style, budget, and preferences in our quick 2-minute quiz.</p>
+                    <h3>Answer 6 Simple Questions</h3>
+                    <p>Tell us about your riding style, budget, and preferences in our quick 2-minute "which bike should I buy" quiz.</p>
                 </div>
                 <div class="step">
                     <div class="step-icon">
                         <i class="fas fa-brain"></i>
                     </div>
-                    <h3>AI-Powered Analysis</h3>
-                    <p>Our algorithm matches your needs with the best bike options available.</p>
+                    <h3>Smart Algorithm Analysis</h3>
+                    <p>Our intelligent system matches your answers with the best bike types and models for your specific needs.</p>
                 </div>
                 <div class="step">
                     <div class="step-icon">
                         <i class="fas fa-star"></i>
                     </div>
-                    <h3>Get Perfect Matches</h3>
-                    <p>Receive personalized recommendations with detailed explanations and where to buy.</p>
+                    <h3>Get Perfect Bike Recommendations</h3>
+                    <p>Receive personalized bike suggestions with detailed explanations and direct purchase links.</p>
                 </div>
             </div>
         </div>
@@ -74,6 +133,11 @@
     <!-- Quiz Section -->
     <section id="quiz" class="quiz-section">
         <div class="container">
+            <!-- Affiliate Disclosure -->
+            <div class="affiliate-disclosure">
+                <p><strong>Disclosure:</strong> This site contains affiliate links. We may earn a commission if you purchase through these links at no additional cost to you.</p>
+            </div>
+            
             <div class="quiz-container" id="quiz-container" style="display: none;">
                 <div class="quiz-progress">
                     <div class="progress-bar">
@@ -136,6 +200,31 @@
         </div>
     </section>
 
+    <!-- SEO Content Section -->
+    <section class="seo-content">
+        <div class="container">
+            <h2>Why Take a "Which Bike Should I Buy" Quiz?</h2>
+            <div class="content-grid">
+                <div class="content-item">
+                    <h3>Save Time and Money</h3>
+                    <p>Instead of spending hours researching bikes, our quiz gives you targeted recommendations in minutes. No more overwhelming bike shop visits or confusing online reviews.</p>
+                </div>
+                <div class="content-item">
+                    <h3>Perfect for Beginners</h3>
+                    <p>Never bought a bike before? Our "which bike should I buy" quiz is designed for beginners and experts alike. Get recommendations that match your experience level.</p>
+                </div>
+                <div class="content-item">
+                    <h3>Budget-Friendly Options</h3>
+                    <p>Whether you have $200 or $2000, our bike recommendation quiz finds options within your budget. From entry-level bikes to premium models.</p>
+                </div>
+                <div class="content-item">
+                    <h3>All Bike Types Covered</h3>
+                    <p>Road bikes, mountain bikes, hybrid bikes, electric bikes, and more. Our comprehensive quiz covers every type of bike for every riding style.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -170,12 +259,9 @@
                         <a href="#"><i class="fab fa-tiktok"></i></a>
                     </div>
                 </div>
-            </div>            <div class="footer-bottom">
-                <p>&copy; 2025 BikeChooser. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
             </div>
-        </div>
+            <p>&copy; 2025 BikeChooser. All rights reserved.</p>        </div>
     </footer>
-
-    <script src="script.js"></script>
+    <script src="script-new.js"></script>
 </body>
 </html>

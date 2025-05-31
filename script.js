@@ -67,133 +67,10 @@ const quizData = [
     }
 ];
 
-// Bike Database
-const bikeDatabase = {
-    road: [
-        {
-            name: "Giant Contend 3",
-            brand: "Giant",
-            price: "$550",
-            image: "https://images.unsplash.com/photo-1544191696-15693df4c96b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-            features: ["Lightweight", "Drop bars", "21 speeds", "Aluminum frame"],
-            description: "Perfect entry-level road bike for fitness and commuting. Lightweight aluminum frame with reliable components.",
-            affiliate: "https://www.rei.com/search?q=giant+contend+3",
-            compareLink: "https://www.bicycling.com/bikes-gear/a20048810/best-road-bikes/"
-        },
-        {
-            name: "Trek Domane AL 2",
-            brand: "Trek",
-            price: "$780",
-            image: "https://images.unsplash.com/photo-1544191696-15693df4c96b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-            features: ["Endurance geometry", "16 speeds", "IsoSpeed technology", "Carbon fork"],
-            description: "Comfortable endurance road bike perfect for long rides and sportives. Features Trek's comfort technology.",
-            affiliate: "https://www.rei.com/search?q=trek+domane+al+2",
-            compareLink: "https://www.bicycling.com/bikes-gear/a20048810/best-road-bikes/"
-        }
-    ],
-    mountain: [
-        {
-            name: "Specialized Rockhopper",
-            brand: "Specialized",
-            price: "$650",
-            image: "https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-            features: ["Hardtail", "29\" wheels", "1x drivetrain", "Trail geometry"],
-            description: "Versatile hardtail mountain bike perfect for trails and light off-road adventures. Great value for beginners.",
-            affiliate: "https://www.rei.com/search?q=specialized+rockhopper",
-            compareLink: "https://www.bicycling.com/bikes-gear/mountain-bike-reviews/"
-        },
-        {
-            name: "Trek Marlin 7",
-            brand: "Trek",
-            price: "$830",
-            image: "https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-            features: ["Alpha Gold Aluminum", "RockShox fork", "2x8 drivetrain", "Internal routing"],
-            description: "Well-rounded trail bike with quality components. Perfect for riders ready to tackle more challenging terrain.",
-            affiliate: "https://www.rei.com/search?q=trek+marlin+7",
-            compareLink: "https://www.bicycling.com/bikes-gear/mountain-bike-reviews/"
-        }
-    ],
-    hybrid: [
-        {
-            name: "Giant Escape 3",
-            brand: "Giant",
-            price: "$430",
-            image: "https://images.unsplash.com/photo-1571068316344-75bc76f77890?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-            features: ["Lightweight aluminum", "21 speeds", "Flat bars", "Puncture-resistant tires"],
-            description: "The perfect all-around bike for commuting, fitness, and recreational riding. Comfortable and reliable.",
-            affiliate: "https://www.rei.com/search?q=giant+escape+3",
-            compareLink: "https://www.bicycling.com/bikes-gear/a20048980/best-hybrid-bikes/"
-        },
-        {
-            name: "Trek FX 3",
-            brand: "Trek",
-            price: "$630",
-            image: "https://images.unsplash.com/photo-1571068316344-75bc76f77890?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-            features: ["Alpha Gold Aluminum", "24 speeds", "Carbon fork", "Wide gear range"],
-            description: "Premium hybrid bike with carbon fork for comfort and performance. Great for longer rides and commuting.",
-            affiliate: "https://www.rei.com/search?q=trek+fx+3",
-            compareLink: "https://www.bicycling.com/bikes-gear/a20048980/best-hybrid-bikes/"
-        }
-    ],
-    electric: [
-        {
-            name: "Rad Power RadCity 5",
-            brand: "Rad Power",
-            price: "$1,499",
-            image: "https://images.unsplash.com/photo-1571068316344-75bc76f77890?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-            features: ["750W motor", "45+ mile range", "Integrated lights", "Cargo rack"],
-            description: "Powerful commuter e-bike with excellent range and practical features. Perfect for daily transportation.",
-            affiliate: "https://www.radpowerbikes.com/products/radcity-electric-commuter-bike",
-            compareLink: "https://www.bicycling.com/bikes-gear/electric-bikes/"
-        },
-        {
-            name: "Trek Verve+ 2",
-            brand: "Trek",
-            price: "$2,400",
-            image: "https://images.unsplash.com/photo-1571068316344-75bc76f77890?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-            features: ["Bosch motor", "50 mile range", "Comfort geometry", "Integrated battery"],
-            description: "Premium electric hybrid with top-quality Bosch drive system. Comfortable and refined for daily use.",
-            affiliate: "https://www.rei.com/search?q=trek+verve+plus+2",
-            compareLink: "https://www.bicycling.com/bikes-gear/electric-bikes/"
-        }
-    ],
-    gravel: [
-        {
-            name: "Giant Contend AR 4",
-            brand: "Giant",
-            price: "$850",
-            image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-            features: ["Adventure geometry", "Disc brakes", "Wide tire clearance", "2x drivetrain"],
-            description: "Versatile gravel bike ready for adventures on and off the beaten path. Great for mixed terrain riding.",
-            affiliate: "https://www.rei.com/search?q=giant+contend+ar+4",
-            compareLink: "https://www.bicycling.com/bikes-gear/gravel-bikes/"
-        }
-    ],
-    cruiser: [
-        {
-            name: "Electra Townie 7D",
-            brand: "Electra",
-            price: "$450",
-            image: "https://images.unsplash.com/photo-1571068316344-75bc76f77890?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-            features: ["Flat Foot Technology", "7 speeds", "Comfort saddle", "Upright position"],
-            description: "The most comfortable bike you'll ever ride. Perfect for casual rides around town and the beach.",
-            affiliate: "https://www.rei.com/search?q=electra+townie+7d",
-            compareLink: "https://www.bicycling.com/bikes-gear/cruiser-bikes/"
-        }
-    ]
-};
-
-// Quiz State
+// Global variables for quiz state
 let currentQuestion = 0;
 let userAnswers = {};
-let bikeScores = {
-    road: 0,
-    mountain: 0,
-    hybrid: 0,
-    electric: 0,
-    gravel: 0,
-    cruiser: 0
-};
+let bikeScores = { road: 0, mountain: 0, hybrid: 0, electric: 0, gravel: 0, cruiser: 0 };
 
 // Quiz Functions
 function startQuiz() {
@@ -211,34 +88,48 @@ function startQuiz() {
 }
 
 function loadQuestion() {
-    const question = quizData[currentQuestion];
-    const progressPercent = ((currentQuestion + 1) / quizData.length) * 100;
-    
-    document.getElementById('progress-fill').style.width = progressPercent + '%';
-    document.getElementById('progress-text').textContent = `Question ${currentQuestion + 1} of ${quizData.length}`;
-    
-    const quizContent = document.getElementById('quiz-content');
-    quizContent.innerHTML = `
-        <div class="question">
-            <h3><i class="${question.icon}"></i> ${question.question}</h3>
-            <div class="options">
-                ${question.options.map(option => `
-                    <div class="option" onclick="selectOption('${option.id}', this)">
-                        <i class="${option.icon}"></i>
-                        <span>${option.text}</span>
-                    </div>
-                `).join('')}
+    try {
+        const question = quizData[currentQuestion];
+        if (!question) {
+            console.error('Question not found:', currentQuestion);
+            return;
+        }
+
+        const progressPercent = ((currentQuestion + 1) / quizData.length) * 100;
+        
+        document.getElementById('progress-fill').style.width = progressPercent + '%';
+        document.getElementById('progress-text').textContent = `Question ${currentQuestion + 1} of ${quizData.length}`;
+        
+        const quizContent = document.getElementById('quiz-content');
+        if (!quizContent) {
+            console.error('Quiz content element not found');
+            return;
+        }
+
+        quizContent.innerHTML = `
+            <div class="question">
+                <h3><i class="${question.icon}"></i> ${question.question}</h3>
+                <div class="options">
+                    ${question.options.map(option => `
+                        <div class="option" onclick="selectOption('${option.id}', this)">
+                            <i class="${option.icon}"></i>
+                            <span>${option.text}</span>
+                        </div>
+                    `).join('')}
+                </div>
+                <div class="quiz-navigation">
+                    <button class="btn btn-secondary" onclick="previousQuestion()" ${currentQuestion === 0 ? 'style="visibility:hidden"' : ''}>
+                        Previous
+                    </button>
+                    <button class="btn" id="next-btn" onclick="nextQuestion()" disabled>
+                        ${currentQuestion === quizData.length - 1 ? 'See Results' : 'Next'}
+                    </button>
+                </div>
             </div>
-            <div class="quiz-navigation">
-                <button class="btn btn-secondary" onclick="previousQuestion()" ${currentQuestion === 0 ? 'style="visibility:hidden"' : ''}>
-                    Previous
-                </button>
-                <button class="btn" id="next-btn" onclick="nextQuestion()" disabled>
-                    ${currentQuestion === quizData.length - 1 ? 'See Results' : 'Next'}
-                </button>
-            </div>
-        </div>
-    `;
+        `;
+    } catch (error) {
+        console.error('Error loading question:', error);
+    }
 }
 
 function selectOption(optionId, element) {
@@ -416,6 +307,20 @@ function animateNumber(element, finalValue) {
         element.textContent = displayValue;
     }, 40);
 }
+
+// Initialize when the page loads
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize quiz state
+    currentQuestion = 0;
+    userAnswers = {};
+    bikeScores = { road: 0, mountain: 0, hybrid: 0, electric: 0, gravel: 0, cruiser: 0 };
+    
+    // Make sure quiz container exists
+    const quizContainer = document.getElementById('quiz-container');
+    if (!quizContainer) {
+        console.error('Quiz container not found');
+    }
+});
 
 // Initialize interactivity when page loads
 document.addEventListener('DOMContentLoaded', addInteractivity);

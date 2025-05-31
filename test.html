@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .quiz-container { border: 1px solid #ccc; padding: 20px; margin: 20px 0; }
+        .option { padding: 10px; margin: 5px 0; border: 1px solid #ddd; cursor: pointer; }
+        .option:hover { background: #f0f0f0; }
+        .btn { padding: 10px 15px; margin: 5px; background: #007bff; color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Quiz Test</h1>
+    <button onclick="startQuiz()">Start Quiz</button>
+    
+    <div id="quiz-container" style="display: none;">
+        <div id="progress-text">Question 1 of 6</div>
+        <div id="quiz-content">
+            <!-- Questions will load here -->
+        </div>
+    </div>
+
+    <script>
+        // Simple test to see if the quiz data loads
+        console.log('Testing quiz functionality...');
+        
+        // Test if script.js loads properly
+        const script = document.createElement('script');
+        script.src = 'script.js';
+        script.onload = function() {
+            console.log('script.js loaded successfully');
+            console.log('quizData exists:', typeof quizData !== 'undefined');
+            if (typeof quizData !== 'undefined') {
+                console.log('First question:', quizData[0]);
+            }
+        };
+        script.onerror = function() {
+            console.error('Failed to load script.js');
+        };
+        document.head.appendChild(script);
+    </script>
+</body>
+</html>
